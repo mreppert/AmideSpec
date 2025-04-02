@@ -1,0 +1,1284 @@
+ *****************************************************
+#  define solvate system
+#  Running bash command:
+bash >>  gmx editconf -f complex.gro -o newbox.gro -bt dodecahedron -d 1.0
+
+out:                       :-) GROMACS - gmx editconf, 2018.4 (-:
+out:  
+out:                              GROMACS is written by:
+out:       Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+out:      Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+out:    Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+out:   Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+out:    Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+out:    Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+out:      Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+out:     Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+out:   Christian Wennberg    Maarten Wolf   
+out:                             and the project leaders:
+out:          Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+out:  
+out:  Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+out:  Copyright (c) 2001-2017, The GROMACS development team at
+out:  Uppsala University, Stockholm University and
+out:  the Royal Institute of Technology, Sweden.
+out:  check out http://www.gromacs.org for more information.
+out:  
+out:  GROMACS is free software; you can redistribute it and/or modify it
+out:  under the terms of the GNU Lesser General Public License
+out:  as published by the Free Software Foundation; either version 2.1
+out:  of the License, or (at your option) any later version.
+out:  
+out:  GROMACS:      gmx editconf, version 2018.4
+out:  Executable:   /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1/bin/gmx
+out:  Data prefix:  /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1
+out:  Working dir:  /home/nanohub/dillner/PigmentHunter/misc/gmx/ipynb
+out:  Command line:
+out:    gmx editconf -f complex.gro -o newbox.gro -bt dodecahedron -d 1.0
+out:  
+out:  
+out:  -------------------------------------------------------
+out:  Program:     gmx editconf, version 2018.4
+out:  Source file: src/gromacs/commandline/cmdlineparser.cpp (line 276)
+out:  Function:    void gmx::CommandLineParser::parse(int*, char**)
+out:  
+out:  Error in user input:
+out:  Invalid command-line options
+out:    In command-line option -f
+out:      File 'complex.gro' does not exist or is not accessible.
+out:      The file could not be opened.
+out:        Reason: No such file or directory
+out:        (call to fopen() returned error code 2)
+out:  
+out:  For more information and tips for troubleshooting, please check the GROMACS
+out:  website at http://www.gromacs.org/Documentation/Errors
+out:  -------------------------------------------------------
+ *****************************************************
+ *****************************************************
+#  blabla
+#  Running bash command:
+bash >>  gmx solvate -cp newbox.gro -cs spc216.gro -p topol.top -o solv.gro
+
+out:                       :-) GROMACS - gmx solvate, 2018.4 (-:
+out:  
+out:                              GROMACS is written by:
+out:       Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+out:      Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+out:    Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+out:   Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+out:    Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+out:    Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+out:      Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+out:     Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+out:   Christian Wennberg    Maarten Wolf   
+out:                             and the project leaders:
+out:          Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+out:  
+out:  Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+out:  Copyright (c) 2001-2017, The GROMACS development team at
+out:  Uppsala University, Stockholm University and
+out:  the Royal Institute of Technology, Sweden.
+out:  check out http://www.gromacs.org for more information.
+out:  
+out:  GROMACS is free software; you can redistribute it and/or modify it
+out:  under the terms of the GNU Lesser General Public License
+out:  as published by the Free Software Foundation; either version 2.1
+out:  of the License, or (at your option) any later version.
+out:  
+out:  GROMACS:      gmx solvate, version 2018.4
+out:  Executable:   /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1/bin/gmx
+out:  Data prefix:  /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1
+out:  Working dir:  /home/nanohub/dillner/PigmentHunter/misc/gmx/ipynb
+out:  Command line:
+out:    gmx solvate -cp newbox.gro -cs spc216.gro -p topol.top -o solv.gro
+out:  
+out:  
+out:  -------------------------------------------------------
+out:  Program:     gmx solvate, version 2018.4
+out:  Source file: src/gromacs/commandline/cmdlineparser.cpp (line 276)
+out:  Function:    void gmx::CommandLineParser::parse(int*, char**)
+out:  
+out:  Error in user input:
+out:  Invalid command-line options
+out:    In command-line option -cp
+out:      File 'newbox.gro' does not exist or is not accessible.
+out:      The file could not be opened.
+out:        Reason: No such file or directory
+out:        (call to fopen() returned error code 2)
+out:    In command-line option -p
+out:      File 'topol.top' does not exist or is not accessible.
+out:      The file could not be opened.
+out:        Reason: No such file or directory
+out:        (call to fopen() returned error code 2)
+out:  
+out:  For more information and tips for troubleshooting, please check the GROMACS
+out:  website at http://www.gromacs.org/Documentation/Errors
+out:  -------------------------------------------------------
+ *****************************************************
+ *****************************************************
+#  Copying protein.gro from pdb2gmx folder
+#  Running bash command:
+bash >>  cp ../pdb2gmx/protein.gro ./
+
+out:  cp: cannot stat '../pdb2gmx/protein.gro': No such file or directory
+ *****************************************************
+ *****************************************************
+#  Copying topol.top from pdb2gmx folder
+#  Running bash command:
+bash >>  cp ../pdb2gmx/topol.top ./
+
+out:  cp: cannot stat '../pdb2gmx/topol.top': No such file or directory
+ *****************************************************
+ *****************************************************
+#  Copying all *.itp inputs from pdb2gmx folder
+#  Running bash command:
+bash >>  cp ../pdb2gmx/*.itp ./
+
+out:  cp: cannot stat '../pdb2gmx/*.itp': No such file or directory
+ *****************************************************
+ *****************************************************
+#  using gmx editconf to ensure 2 nm distance to each wall
+#  Running bash command:
+bash >>  gmx editconf -f protein.gro -o newbox.gro -bt cubic -d 2
+
+out:                       :-) GROMACS - gmx editconf, 2018.4 (-:
+out:  
+out:                              GROMACS is written by:
+out:       Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+out:      Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+out:    Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+out:   Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+out:    Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+out:    Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+out:      Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+out:     Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+out:   Christian Wennberg    Maarten Wolf   
+out:                             and the project leaders:
+out:          Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+out:  
+out:  Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+out:  Copyright (c) 2001-2017, The GROMACS development team at
+out:  Uppsala University, Stockholm University and
+out:  the Royal Institute of Technology, Sweden.
+out:  check out http://www.gromacs.org for more information.
+out:  
+out:  GROMACS is free software; you can redistribute it and/or modify it
+out:  under the terms of the GNU Lesser General Public License
+out:  as published by the Free Software Foundation; either version 2.1
+out:  of the License, or (at your option) any later version.
+out:  
+out:  GROMACS:      gmx editconf, version 2018.4
+out:  Executable:   /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1/bin/gmx
+out:  Data prefix:  /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1
+out:  Working dir:  /home/nanohub/dillner/PigmentHunter/misc/gmx/ipynb
+out:  Command line:
+out:    gmx editconf -f protein.gro -o newbox.gro -bt cubic -d 2
+out:  
+out:  
+out:  -------------------------------------------------------
+out:  Program:     gmx editconf, version 2018.4
+out:  Source file: src/gromacs/commandline/cmdlineparser.cpp (line 276)
+out:  Function:    void gmx::CommandLineParser::parse(int*, char**)
+out:  
+out:  Error in user input:
+out:  Invalid command-line options
+out:    In command-line option -f
+out:      File 'protein.gro' does not exist or is not accessible.
+out:      The file could not be opened.
+out:        Reason: No such file or directory
+out:        (call to fopen() returned error code 2)
+out:  
+out:  For more information and tips for troubleshooting, please check the GROMACS
+out:  website at http://www.gromacs.org/Documentation/Errors
+out:  -------------------------------------------------------
+ *****************************************************
+ *****************************************************
+#  define solvate system
+#  Running bash command:
+bash >>  gmx editconf -f complex.gro -o newbox.gro -bt dodecahedron -d 1.0
+
+out:                       :-) GROMACS - gmx editconf, 2018.4 (-:
+out:  
+out:                              GROMACS is written by:
+out:       Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+out:      Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+out:    Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+out:   Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+out:    Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+out:    Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+out:      Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+out:     Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+out:   Christian Wennberg    Maarten Wolf   
+out:                             and the project leaders:
+out:          Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+out:  
+out:  Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+out:  Copyright (c) 2001-2017, The GROMACS development team at
+out:  Uppsala University, Stockholm University and
+out:  the Royal Institute of Technology, Sweden.
+out:  check out http://www.gromacs.org for more information.
+out:  
+out:  GROMACS is free software; you can redistribute it and/or modify it
+out:  under the terms of the GNU Lesser General Public License
+out:  as published by the Free Software Foundation; either version 2.1
+out:  of the License, or (at your option) any later version.
+out:  
+out:  GROMACS:      gmx editconf, version 2018.4
+out:  Executable:   /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1/bin/gmx
+out:  Data prefix:  /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1
+out:  Working dir:  /home/nanohub/dillner/PigmentHunter/misc/gmx/ipynb
+out:  Command line:
+out:    gmx editconf -f complex.gro -o newbox.gro -bt dodecahedron -d 1.0
+out:  
+out:  
+out:  -------------------------------------------------------
+out:  Program:     gmx editconf, version 2018.4
+out:  Source file: src/gromacs/commandline/cmdlineparser.cpp (line 276)
+out:  Function:    void gmx::CommandLineParser::parse(int*, char**)
+out:  
+out:  Error in user input:
+out:  Invalid command-line options
+out:    In command-line option -f
+out:      File 'complex.gro' does not exist or is not accessible.
+out:      The file could not be opened.
+out:        Reason: No such file or directory
+out:        (call to fopen() returned error code 2)
+out:  
+out:  For more information and tips for troubleshooting, please check the GROMACS
+out:  website at http://www.gromacs.org/Documentation/Errors
+out:  -------------------------------------------------------
+ *****************************************************
+ *****************************************************
+#  blabla
+#  Running bash command:
+bash >>  gmx solvate -cp newbox.gro -cs spc216.gro -p topol.top -o solv.gro
+
+out:                       :-) GROMACS - gmx solvate, 2018.4 (-:
+out:  
+out:                              GROMACS is written by:
+out:       Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+out:      Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+out:    Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+out:   Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+out:    Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+out:    Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+out:      Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+out:     Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+out:   Christian Wennberg    Maarten Wolf   
+out:                             and the project leaders:
+out:          Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+out:  
+out:  Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+out:  Copyright (c) 2001-2017, The GROMACS development team at
+out:  Uppsala University, Stockholm University and
+out:  the Royal Institute of Technology, Sweden.
+out:  check out http://www.gromacs.org for more information.
+out:  
+out:  GROMACS is free software; you can redistribute it and/or modify it
+out:  under the terms of the GNU Lesser General Public License
+out:  as published by the Free Software Foundation; either version 2.1
+out:  of the License, or (at your option) any later version.
+out:  
+out:  GROMACS:      gmx solvate, version 2018.4
+out:  Executable:   /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1/bin/gmx
+out:  Data prefix:  /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1
+out:  Working dir:  /home/nanohub/dillner/PigmentHunter/misc/gmx/ipynb
+out:  Command line:
+out:    gmx solvate -cp newbox.gro -cs spc216.gro -p topol.top -o solv.gro
+out:  
+out:  
+out:  -------------------------------------------------------
+out:  Program:     gmx solvate, version 2018.4
+out:  Source file: src/gromacs/commandline/cmdlineparser.cpp (line 276)
+out:  Function:    void gmx::CommandLineParser::parse(int*, char**)
+out:  
+out:  Error in user input:
+out:  Invalid command-line options
+out:    In command-line option -cp
+out:      File 'newbox.gro' does not exist or is not accessible.
+out:      The file could not be opened.
+out:        Reason: No such file or directory
+out:        (call to fopen() returned error code 2)
+out:    In command-line option -p
+out:      File 'topol.top' does not exist or is not accessible.
+out:      The file could not be opened.
+out:        Reason: No such file or directory
+out:        (call to fopen() returned error code 2)
+out:  
+out:  For more information and tips for troubleshooting, please check the GROMACS
+out:  website at http://www.gromacs.org/Documentation/Errors
+out:  -------------------------------------------------------
+ *****************************************************
+ *****************************************************
+#  Compiling em.tpr binary for minimization
+#  Running bash command:
+bash >>  gmx grompp -maxwarn 1 -f em.mdp -c newbox.gro -p topol.top -o em.tpr
+
+out:                        :-) GROMACS - gmx grompp, 2018.4 (-:
+out:  
+out:                              GROMACS is written by:
+out:       Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+out:      Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+out:    Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+out:   Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+out:    Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+out:    Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+out:      Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+out:     Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+out:   Christian Wennberg    Maarten Wolf   
+out:                             and the project leaders:
+out:          Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+out:  
+out:  Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+out:  Copyright (c) 2001-2017, The GROMACS development team at
+out:  Uppsala University, Stockholm University and
+out:  the Royal Institute of Technology, Sweden.
+out:  check out http://www.gromacs.org for more information.
+out:  
+out:  GROMACS is free software; you can redistribute it and/or modify it
+out:  under the terms of the GNU Lesser General Public License
+out:  as published by the Free Software Foundation; either version 2.1
+out:  of the License, or (at your option) any later version.
+out:  
+out:  GROMACS:      gmx grompp, version 2018.4
+out:  Executable:   /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1/bin/gmx
+out:  Data prefix:  /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1
+out:  Working dir:  /home/nanohub/dillner/PigmentHunter/misc/gmx/ipynb
+out:  Command line:
+out:    gmx grompp -maxwarn 1 -f em.mdp -c newbox.gro -p topol.top -o em.tpr
+out:  
+out:  
+out:  -------------------------------------------------------
+out:  Program:     gmx grompp, version 2018.4
+out:  Source file: src/gromacs/commandline/cmdlineparser.cpp (line 276)
+out:  Function:    void gmx::CommandLineParser::parse(int*, char**)
+out:  
+out:  Error in user input:
+out:  Invalid command-line options
+out:    In command-line option -f
+out:      File 'em.mdp' does not exist or is not accessible.
+out:      The file could not be opened.
+out:        Reason: No such file or directory
+out:        (call to fopen() returned error code 2)
+out:    In command-line option -c
+out:      File 'newbox.gro' does not exist or is not accessible.
+out:      The file could not be opened.
+out:        Reason: No such file or directory
+out:        (call to fopen() returned error code 2)
+out:    In command-line option -p
+out:      File 'topol.top' does not exist or is not accessible.
+out:      The file could not be opened.
+out:        Reason: No such file or directory
+out:        (call to fopen() returned error code 2)
+out:  
+out:  For more information and tips for troubleshooting, please check the GROMACS
+out:  website at http://www.gromacs.org/Documentation/Errors
+out:  -------------------------------------------------------
+ *****************************************************
+ *****************************************************
+#  Copying protein.gro from pdb2gmx folder
+#  Running bash command:
+bash >>  cp ../pdb2gmx/protein.gro ./
+
+out:  cp: cannot stat '../pdb2gmx/protein.gro': No such file or directory
+ *****************************************************
+ *****************************************************
+#  Copying topol.top from pdb2gmx folder
+#  Running bash command:
+bash >>  cp ../pdb2gmx/topol.top ./
+
+out:  cp: cannot stat '../pdb2gmx/topol.top': No such file or directory
+ *****************************************************
+ *****************************************************
+#  Copying all *.itp inputs from pdb2gmx folder
+#  Running bash command:
+bash >>  cp ../pdb2gmx/*.itp ./
+
+out:  cp: cannot stat '../pdb2gmx/*.itp': No such file or directory
+ *****************************************************
+ *****************************************************
+#  using gmx editconf to ensure 2 nm distance to each wall
+#  Running bash command:
+bash >>  gmx editconf -f protein.gro -o newbox.gro -bt cubic -d 2
+
+out:                       :-) GROMACS - gmx editconf, 2018.4 (-:
+out:  
+out:                              GROMACS is written by:
+out:       Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+out:      Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+out:    Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+out:   Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+out:    Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+out:    Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+out:      Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+out:     Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+out:   Christian Wennberg    Maarten Wolf   
+out:                             and the project leaders:
+out:          Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+out:  
+out:  Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+out:  Copyright (c) 2001-2017, The GROMACS development team at
+out:  Uppsala University, Stockholm University and
+out:  the Royal Institute of Technology, Sweden.
+out:  check out http://www.gromacs.org for more information.
+out:  
+out:  GROMACS is free software; you can redistribute it and/or modify it
+out:  under the terms of the GNU Lesser General Public License
+out:  as published by the Free Software Foundation; either version 2.1
+out:  of the License, or (at your option) any later version.
+out:  
+out:  GROMACS:      gmx editconf, version 2018.4
+out:  Executable:   /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1/bin/gmx
+out:  Data prefix:  /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1
+out:  Working dir:  /home/nanohub/dillner/PigmentHunter/misc/gmx/ipynb
+out:  Command line:
+out:    gmx editconf -f protein.gro -o newbox.gro -bt cubic -d 2
+out:  
+out:  
+out:  -------------------------------------------------------
+out:  Program:     gmx editconf, version 2018.4
+out:  Source file: src/gromacs/commandline/cmdlineparser.cpp (line 276)
+out:  Function:    void gmx::CommandLineParser::parse(int*, char**)
+out:  
+out:  Error in user input:
+out:  Invalid command-line options
+out:    In command-line option -f
+out:      File 'protein.gro' does not exist or is not accessible.
+out:      The file could not be opened.
+out:        Reason: No such file or directory
+out:        (call to fopen() returned error code 2)
+out:  
+out:  For more information and tips for troubleshooting, please check the GROMACS
+out:  website at http://www.gromacs.org/Documentation/Errors
+out:  -------------------------------------------------------
+ *****************************************************
+ *****************************************************
+#  define solvate system
+#  Running bash command:
+bash >>  gmx editconf -f complex.gro -o newbox.gro -bt dodecahedron -d 1.0
+
+out:                       :-) GROMACS - gmx editconf, 2018.4 (-:
+out:  
+out:                              GROMACS is written by:
+out:       Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+out:      Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+out:    Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+out:   Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+out:    Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+out:    Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+out:      Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+out:     Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+out:   Christian Wennberg    Maarten Wolf   
+out:                             and the project leaders:
+out:          Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+out:  
+out:  Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+out:  Copyright (c) 2001-2017, The GROMACS development team at
+out:  Uppsala University, Stockholm University and
+out:  the Royal Institute of Technology, Sweden.
+out:  check out http://www.gromacs.org for more information.
+out:  
+out:  GROMACS is free software; you can redistribute it and/or modify it
+out:  under the terms of the GNU Lesser General Public License
+out:  as published by the Free Software Foundation; either version 2.1
+out:  of the License, or (at your option) any later version.
+out:  
+out:  GROMACS:      gmx editconf, version 2018.4
+out:  Executable:   /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1/bin/gmx
+out:  Data prefix:  /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1
+out:  Working dir:  /home/nanohub/dillner/PigmentHunter/misc/gmx/ipynb
+out:  Command line:
+out:    gmx editconf -f complex.gro -o newbox.gro -bt dodecahedron -d 1.0
+out:  
+out:  
+out:  -------------------------------------------------------
+out:  Program:     gmx editconf, version 2018.4
+out:  Source file: src/gromacs/commandline/cmdlineparser.cpp (line 276)
+out:  Function:    void gmx::CommandLineParser::parse(int*, char**)
+out:  
+out:  Error in user input:
+out:  Invalid command-line options
+out:    In command-line option -f
+out:      File 'complex.gro' does not exist or is not accessible.
+out:      The file could not be opened.
+out:        Reason: No such file or directory
+out:        (call to fopen() returned error code 2)
+out:  
+out:  For more information and tips for troubleshooting, please check the GROMACS
+out:  website at http://www.gromacs.org/Documentation/Errors
+out:  -------------------------------------------------------
+ *****************************************************
+ *****************************************************
+#  blabla
+#  Running bash command:
+bash >>  gmx solvate -cp newbox.gro -cs spc216.gro -p topol.top -o solv.gro
+
+out:                       :-) GROMACS - gmx solvate, 2018.4 (-:
+out:  
+out:                              GROMACS is written by:
+out:       Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+out:      Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+out:    Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+out:   Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+out:    Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+out:    Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+out:      Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+out:     Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+out:   Christian Wennberg    Maarten Wolf   
+out:                             and the project leaders:
+out:          Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+out:  
+out:  Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+out:  Copyright (c) 2001-2017, The GROMACS development team at
+out:  Uppsala University, Stockholm University and
+out:  the Royal Institute of Technology, Sweden.
+out:  check out http://www.gromacs.org for more information.
+out:  
+out:  GROMACS is free software; you can redistribute it and/or modify it
+out:  under the terms of the GNU Lesser General Public License
+out:  as published by the Free Software Foundation; either version 2.1
+out:  of the License, or (at your option) any later version.
+out:  
+out:  GROMACS:      gmx solvate, version 2018.4
+out:  Executable:   /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1/bin/gmx
+out:  Data prefix:  /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1
+out:  Working dir:  /home/nanohub/dillner/PigmentHunter/misc/gmx/ipynb
+out:  Command line:
+out:    gmx solvate -cp newbox.gro -cs spc216.gro -p topol.top -o solv.gro
+out:  
+out:  
+out:  -------------------------------------------------------
+out:  Program:     gmx solvate, version 2018.4
+out:  Source file: src/gromacs/commandline/cmdlineparser.cpp (line 276)
+out:  Function:    void gmx::CommandLineParser::parse(int*, char**)
+out:  
+out:  Error in user input:
+out:  Invalid command-line options
+out:    In command-line option -cp
+out:      File 'newbox.gro' does not exist or is not accessible.
+out:      The file could not be opened.
+out:        Reason: No such file or directory
+out:        (call to fopen() returned error code 2)
+out:    In command-line option -p
+out:      File 'topol.top' does not exist or is not accessible.
+out:      The file could not be opened.
+out:        Reason: No such file or directory
+out:        (call to fopen() returned error code 2)
+out:  
+out:  For more information and tips for troubleshooting, please check the GROMACS
+out:  website at http://www.gromacs.org/Documentation/Errors
+out:  -------------------------------------------------------
+ *****************************************************
+ *****************************************************
+#  Compiling em.tpr binary for minimization
+#  Running bash command:
+bash >>  gmx grompp -maxwarn 1 -f em.mdp -c newbox.gro -p topol.top -o em.tpr
+
+out:                        :-) GROMACS - gmx grompp, 2018.4 (-:
+out:  
+out:                              GROMACS is written by:
+out:       Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+out:      Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+out:    Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+out:   Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+out:    Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+out:    Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+out:      Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+out:     Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+out:   Christian Wennberg    Maarten Wolf   
+out:                             and the project leaders:
+out:          Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+out:  
+out:  Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+out:  Copyright (c) 2001-2017, The GROMACS development team at
+out:  Uppsala University, Stockholm University and
+out:  the Royal Institute of Technology, Sweden.
+out:  check out http://www.gromacs.org for more information.
+out:  
+out:  GROMACS is free software; you can redistribute it and/or modify it
+out:  under the terms of the GNU Lesser General Public License
+out:  as published by the Free Software Foundation; either version 2.1
+out:  of the License, or (at your option) any later version.
+out:  
+out:  GROMACS:      gmx grompp, version 2018.4
+out:  Executable:   /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1/bin/gmx
+out:  Data prefix:  /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1
+out:  Working dir:  /home/nanohub/dillner/PigmentHunter/misc/gmx/ipynb
+out:  Command line:
+out:    gmx grompp -maxwarn 1 -f em.mdp -c newbox.gro -p topol.top -o em.tpr
+out:  
+out:  
+out:  -------------------------------------------------------
+out:  Program:     gmx grompp, version 2018.4
+out:  Source file: src/gromacs/commandline/cmdlineparser.cpp (line 276)
+out:  Function:    void gmx::CommandLineParser::parse(int*, char**)
+out:  
+out:  Error in user input:
+out:  Invalid command-line options
+out:    In command-line option -f
+out:      File 'em.mdp' does not exist or is not accessible.
+out:      The file could not be opened.
+out:        Reason: No such file or directory
+out:        (call to fopen() returned error code 2)
+out:    In command-line option -c
+out:      File 'newbox.gro' does not exist or is not accessible.
+out:      The file could not be opened.
+out:        Reason: No such file or directory
+out:        (call to fopen() returned error code 2)
+out:    In command-line option -p
+out:      File 'topol.top' does not exist or is not accessible.
+out:      The file could not be opened.
+out:        Reason: No such file or directory
+out:        (call to fopen() returned error code 2)
+out:  
+out:  For more information and tips for troubleshooting, please check the GROMACS
+out:  website at http://www.gromacs.org/Documentation/Errors
+out:  -------------------------------------------------------
+ *****************************************************
+ *****************************************************
+#  Copying protein.gro from pdb2gmx folder
+#  Running bash command:
+bash >>  cp ../pdb2gmx/protein.gro ./
+
+out:  cp: cannot stat '../pdb2gmx/protein.gro': No such file or directory
+ *****************************************************
+ *****************************************************
+#  Copying topol.top from pdb2gmx folder
+#  Running bash command:
+bash >>  cp ../pdb2gmx/topol.top ./
+
+out:  cp: cannot stat '../pdb2gmx/topol.top': No such file or directory
+ *****************************************************
+ *****************************************************
+#  Copying all *.itp inputs from pdb2gmx folder
+#  Running bash command:
+bash >>  cp ../pdb2gmx/*.itp ./
+
+out:  cp: cannot stat '../pdb2gmx/*.itp': No such file or directory
+ *****************************************************
+ *****************************************************
+#  using gmx editconf to ensure 2 nm distance to each wall
+#  Running bash command:
+bash >>  gmx editconf -f protein.gro -o newbox.gro -bt cubic -d 2
+
+out:                       :-) GROMACS - gmx editconf, 2018.4 (-:
+out:  
+out:                              GROMACS is written by:
+out:       Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+out:      Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+out:    Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+out:   Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+out:    Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+out:    Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+out:      Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+out:     Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+out:   Christian Wennberg    Maarten Wolf   
+out:                             and the project leaders:
+out:          Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+out:  
+out:  Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+out:  Copyright (c) 2001-2017, The GROMACS development team at
+out:  Uppsala University, Stockholm University and
+out:  the Royal Institute of Technology, Sweden.
+out:  check out http://www.gromacs.org for more information.
+out:  
+out:  GROMACS is free software; you can redistribute it and/or modify it
+out:  under the terms of the GNU Lesser General Public License
+out:  as published by the Free Software Foundation; either version 2.1
+out:  of the License, or (at your option) any later version.
+out:  
+out:  GROMACS:      gmx editconf, version 2018.4
+out:  Executable:   /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1/bin/gmx
+out:  Data prefix:  /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1
+out:  Working dir:  /home/nanohub/dillner/PigmentHunter/misc/gmx/ipynb
+out:  Command line:
+out:    gmx editconf -f protein.gro -o newbox.gro -bt cubic -d 2
+out:  
+out:  
+out:  -------------------------------------------------------
+out:  Program:     gmx editconf, version 2018.4
+out:  Source file: src/gromacs/commandline/cmdlineparser.cpp (line 276)
+out:  Function:    void gmx::CommandLineParser::parse(int*, char**)
+out:  
+out:  Error in user input:
+out:  Invalid command-line options
+out:    In command-line option -f
+out:      File 'protein.gro' does not exist or is not accessible.
+out:      The file could not be opened.
+out:        Reason: No such file or directory
+out:        (call to fopen() returned error code 2)
+out:  
+out:  For more information and tips for troubleshooting, please check the GROMACS
+out:  website at http://www.gromacs.org/Documentation/Errors
+out:  -------------------------------------------------------
+ *****************************************************
+ *****************************************************
+#  define solvate system
+#  Running bash command:
+bash >>  gmx editconf -f protein.gro -o newbox.gro -bt dodecahedron -d 1.0
+
+out:                       :-) GROMACS - gmx editconf, 2018.4 (-:
+out:  
+out:                              GROMACS is written by:
+out:       Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+out:      Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+out:    Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+out:   Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+out:    Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+out:    Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+out:      Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+out:     Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+out:   Christian Wennberg    Maarten Wolf   
+out:                             and the project leaders:
+out:          Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+out:  
+out:  Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+out:  Copyright (c) 2001-2017, The GROMACS development team at
+out:  Uppsala University, Stockholm University and
+out:  the Royal Institute of Technology, Sweden.
+out:  check out http://www.gromacs.org for more information.
+out:  
+out:  GROMACS is free software; you can redistribute it and/or modify it
+out:  under the terms of the GNU Lesser General Public License
+out:  as published by the Free Software Foundation; either version 2.1
+out:  of the License, or (at your option) any later version.
+out:  
+out:  GROMACS:      gmx editconf, version 2018.4
+out:  Executable:   /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1/bin/gmx
+out:  Data prefix:  /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1
+out:  Working dir:  /home/nanohub/dillner/PigmentHunter/misc/gmx/ipynb
+out:  Command line:
+out:    gmx editconf -f protein.gro -o newbox.gro -bt dodecahedron -d 1.0
+out:  
+out:  
+out:  -------------------------------------------------------
+out:  Program:     gmx editconf, version 2018.4
+out:  Source file: src/gromacs/commandline/cmdlineparser.cpp (line 276)
+out:  Function:    void gmx::CommandLineParser::parse(int*, char**)
+out:  
+out:  Error in user input:
+out:  Invalid command-line options
+out:    In command-line option -f
+out:      File 'protein.gro' does not exist or is not accessible.
+out:      The file could not be opened.
+out:        Reason: No such file or directory
+out:        (call to fopen() returned error code 2)
+out:  
+out:  For more information and tips for troubleshooting, please check the GROMACS
+out:  website at http://www.gromacs.org/Documentation/Errors
+out:  -------------------------------------------------------
+ *****************************************************
+ *****************************************************
+#  blabla
+#  Running bash command:
+bash >>  gmx solvate -cp newbox.gro -cs spc216.gro -p topol.top -o solv.gro
+
+out:                       :-) GROMACS - gmx solvate, 2018.4 (-:
+out:  
+out:                              GROMACS is written by:
+out:       Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+out:      Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+out:    Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+out:   Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+out:    Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+out:    Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+out:      Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+out:     Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+out:   Christian Wennberg    Maarten Wolf   
+out:                             and the project leaders:
+out:          Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+out:  
+out:  Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+out:  Copyright (c) 2001-2017, The GROMACS development team at
+out:  Uppsala University, Stockholm University and
+out:  the Royal Institute of Technology, Sweden.
+out:  check out http://www.gromacs.org for more information.
+out:  
+out:  GROMACS is free software; you can redistribute it and/or modify it
+out:  under the terms of the GNU Lesser General Public License
+out:  as published by the Free Software Foundation; either version 2.1
+out:  of the License, or (at your option) any later version.
+out:  
+out:  GROMACS:      gmx solvate, version 2018.4
+out:  Executable:   /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1/bin/gmx
+out:  Data prefix:  /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1
+out:  Working dir:  /home/nanohub/dillner/PigmentHunter/misc/gmx/ipynb
+out:  Command line:
+out:    gmx solvate -cp newbox.gro -cs spc216.gro -p topol.top -o solv.gro
+out:  
+out:  
+out:  -------------------------------------------------------
+out:  Program:     gmx solvate, version 2018.4
+out:  Source file: src/gromacs/commandline/cmdlineparser.cpp (line 276)
+out:  Function:    void gmx::CommandLineParser::parse(int*, char**)
+out:  
+out:  Error in user input:
+out:  Invalid command-line options
+out:    In command-line option -cp
+out:      File 'newbox.gro' does not exist or is not accessible.
+out:      The file could not be opened.
+out:        Reason: No such file or directory
+out:        (call to fopen() returned error code 2)
+out:    In command-line option -p
+out:      File 'topol.top' does not exist or is not accessible.
+out:      The file could not be opened.
+out:        Reason: No such file or directory
+out:        (call to fopen() returned error code 2)
+out:  
+out:  For more information and tips for troubleshooting, please check the GROMACS
+out:  website at http://www.gromacs.org/Documentation/Errors
+out:  -------------------------------------------------------
+ *****************************************************
+ *****************************************************
+#  Compiling em.tpr binary for minimization
+#  Running bash command:
+bash >>  gmx grompp -maxwarn 1 -f em.mdp -c newbox.gro -p topol.top -o em.tpr
+
+out:                        :-) GROMACS - gmx grompp, 2018.4 (-:
+out:  
+out:                              GROMACS is written by:
+out:       Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+out:      Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+out:    Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+out:   Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+out:    Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+out:    Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+out:      Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+out:     Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+out:   Christian Wennberg    Maarten Wolf   
+out:                             and the project leaders:
+out:          Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+out:  
+out:  Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+out:  Copyright (c) 2001-2017, The GROMACS development team at
+out:  Uppsala University, Stockholm University and
+out:  the Royal Institute of Technology, Sweden.
+out:  check out http://www.gromacs.org for more information.
+out:  
+out:  GROMACS is free software; you can redistribute it and/or modify it
+out:  under the terms of the GNU Lesser General Public License
+out:  as published by the Free Software Foundation; either version 2.1
+out:  of the License, or (at your option) any later version.
+out:  
+out:  GROMACS:      gmx grompp, version 2018.4
+out:  Executable:   /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1/bin/gmx
+out:  Data prefix:  /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1
+out:  Working dir:  /home/nanohub/dillner/PigmentHunter/misc/gmx/ipynb
+out:  Command line:
+out:    gmx grompp -maxwarn 1 -f em.mdp -c newbox.gro -p topol.top -o em.tpr
+out:  
+out:  
+out:  -------------------------------------------------------
+out:  Program:     gmx grompp, version 2018.4
+out:  Source file: src/gromacs/commandline/cmdlineparser.cpp (line 276)
+out:  Function:    void gmx::CommandLineParser::parse(int*, char**)
+out:  
+out:  Error in user input:
+out:  Invalid command-line options
+out:    In command-line option -f
+out:      File 'em.mdp' does not exist or is not accessible.
+out:      The file could not be opened.
+out:        Reason: No such file or directory
+out:        (call to fopen() returned error code 2)
+out:    In command-line option -c
+out:      File 'newbox.gro' does not exist or is not accessible.
+out:      The file could not be opened.
+out:        Reason: No such file or directory
+out:        (call to fopen() returned error code 2)
+out:    In command-line option -p
+out:      File 'topol.top' does not exist or is not accessible.
+out:      The file could not be opened.
+out:        Reason: No such file or directory
+out:        (call to fopen() returned error code 2)
+out:  
+out:  For more information and tips for troubleshooting, please check the GROMACS
+out:  website at http://www.gromacs.org/Documentation/Errors
+out:  -------------------------------------------------------
+ *****************************************************
+ *****************************************************
+#  Copying protein.gro from pdb2gmx folder
+#  Running bash command:
+bash >>  cp ../pdb2gmx/protein.gro ./
+
+out:  cp: cannot stat '../pdb2gmx/protein.gro': No such file or directory
+ *****************************************************
+ *****************************************************
+#  Copying topol.top from pdb2gmx folder
+#  Running bash command:
+bash >>  cp ../pdb2gmx/topol.top ./
+
+out:  cp: cannot stat '../pdb2gmx/topol.top': No such file or directory
+ *****************************************************
+ *****************************************************
+#  Copying all *.itp inputs from pdb2gmx folder
+#  Running bash command:
+bash >>  cp ../pdb2gmx/*.itp ./
+
+out:  cp: cannot stat '../pdb2gmx/*.itp': No such file or directory
+ *****************************************************
+ *****************************************************
+#  define solvate system
+#  Running bash command:
+bash >>  gmx editconf -f protein.gro -o newbox.gro -bt dodecahedron -d 1.0
+
+out:                       :-) GROMACS - gmx editconf, 2018.4 (-:
+out:  
+out:                              GROMACS is written by:
+out:       Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+out:      Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+out:    Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+out:   Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+out:    Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+out:    Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+out:      Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+out:     Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+out:   Christian Wennberg    Maarten Wolf   
+out:                             and the project leaders:
+out:          Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+out:  
+out:  Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+out:  Copyright (c) 2001-2017, The GROMACS development team at
+out:  Uppsala University, Stockholm University and
+out:  the Royal Institute of Technology, Sweden.
+out:  check out http://www.gromacs.org for more information.
+out:  
+out:  GROMACS is free software; you can redistribute it and/or modify it
+out:  under the terms of the GNU Lesser General Public License
+out:  as published by the Free Software Foundation; either version 2.1
+out:  of the License, or (at your option) any later version.
+out:  
+out:  GROMACS:      gmx editconf, version 2018.4
+out:  Executable:   /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1/bin/gmx
+out:  Data prefix:  /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1
+out:  Working dir:  /home/nanohub/dillner/PigmentHunter/misc/gmx/ipynb
+out:  Command line:
+out:    gmx editconf -f protein.gro -o newbox.gro -bt dodecahedron -d 1.0
+out:  
+out:  
+out:  -------------------------------------------------------
+out:  Program:     gmx editconf, version 2018.4
+out:  Source file: src/gromacs/commandline/cmdlineparser.cpp (line 276)
+out:  Function:    void gmx::CommandLineParser::parse(int*, char**)
+out:  
+out:  Error in user input:
+out:  Invalid command-line options
+out:    In command-line option -f
+out:      File 'protein.gro' does not exist or is not accessible.
+out:      The file could not be opened.
+out:        Reason: No such file or directory
+out:        (call to fopen() returned error code 2)
+out:  
+out:  For more information and tips for troubleshooting, please check the GROMACS
+out:  website at http://www.gromacs.org/Documentation/Errors
+out:  -------------------------------------------------------
+ *****************************************************
+ *****************************************************
+#  blabla
+#  Running bash command:
+bash >>  gmx solvate -cp newbox.gro -cs spc216.gro -p topol.top -o solv.gro
+
+out:                       :-) GROMACS - gmx solvate, 2018.4 (-:
+out:  
+out:                              GROMACS is written by:
+out:       Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+out:      Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+out:    Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+out:   Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+out:    Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+out:    Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+out:      Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+out:     Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+out:   Christian Wennberg    Maarten Wolf   
+out:                             and the project leaders:
+out:          Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+out:  
+out:  Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+out:  Copyright (c) 2001-2017, The GROMACS development team at
+out:  Uppsala University, Stockholm University and
+out:  the Royal Institute of Technology, Sweden.
+out:  check out http://www.gromacs.org for more information.
+out:  
+out:  GROMACS is free software; you can redistribute it and/or modify it
+out:  under the terms of the GNU Lesser General Public License
+out:  as published by the Free Software Foundation; either version 2.1
+out:  of the License, or (at your option) any later version.
+out:  
+out:  GROMACS:      gmx solvate, version 2018.4
+out:  Executable:   /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1/bin/gmx
+out:  Data prefix:  /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1
+out:  Working dir:  /home/nanohub/dillner/PigmentHunter/misc/gmx/ipynb
+out:  Command line:
+out:    gmx solvate -cp newbox.gro -cs spc216.gro -p topol.top -o solv.gro
+out:  
+out:  
+out:  -------------------------------------------------------
+out:  Program:     gmx solvate, version 2018.4
+out:  Source file: src/gromacs/commandline/cmdlineparser.cpp (line 276)
+out:  Function:    void gmx::CommandLineParser::parse(int*, char**)
+out:  
+out:  Error in user input:
+out:  Invalid command-line options
+out:    In command-line option -cp
+out:      File 'newbox.gro' does not exist or is not accessible.
+out:      The file could not be opened.
+out:        Reason: No such file or directory
+out:        (call to fopen() returned error code 2)
+out:    In command-line option -p
+out:      File 'topol.top' does not exist or is not accessible.
+out:      The file could not be opened.
+out:        Reason: No such file or directory
+out:        (call to fopen() returned error code 2)
+out:  
+out:  For more information and tips for troubleshooting, please check the GROMACS
+out:  website at http://www.gromacs.org/Documentation/Errors
+out:  -------------------------------------------------------
+ *****************************************************
+ *****************************************************
+#  generate a ions.tpr file
+#  Running bash command:
+bash >>  gmx grompp -f ions.mdp -c solv.gro -p topol.top -o ions.tpr
+
+out:                        :-) GROMACS - gmx grompp, 2018.4 (-:
+out:  
+out:                              GROMACS is written by:
+out:       Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+out:      Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+out:    Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+out:   Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+out:    Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+out:    Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+out:      Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+out:     Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+out:   Christian Wennberg    Maarten Wolf   
+out:                             and the project leaders:
+out:          Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+out:  
+out:  Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+out:  Copyright (c) 2001-2017, The GROMACS development team at
+out:  Uppsala University, Stockholm University and
+out:  the Royal Institute of Technology, Sweden.
+out:  check out http://www.gromacs.org for more information.
+out:  
+out:  GROMACS is free software; you can redistribute it and/or modify it
+out:  under the terms of the GNU Lesser General Public License
+out:  as published by the Free Software Foundation; either version 2.1
+out:  of the License, or (at your option) any later version.
+out:  
+out:  GROMACS:      gmx grompp, version 2018.4
+out:  Executable:   /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1/bin/gmx
+out:  Data prefix:  /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1
+out:  Working dir:  /home/nanohub/dillner/PigmentHunter/misc/gmx/ipynb
+out:  Command line:
+out:    gmx grompp -f ions.mdp -c solv.gro -p topol.top -o ions.tpr
+out:  
+out:  
+out:  -------------------------------------------------------
+out:  Program:     gmx grompp, version 2018.4
+out:  Source file: src/gromacs/commandline/cmdlineparser.cpp (line 276)
+out:  Function:    void gmx::CommandLineParser::parse(int*, char**)
+out:  
+out:  Error in user input:
+out:  Invalid command-line options
+out:    In command-line option -f
+out:      File 'ions.mdp' does not exist or is not accessible.
+out:      The file could not be opened.
+out:        Reason: No such file or directory
+out:        (call to fopen() returned error code 2)
+out:    In command-line option -c
+out:      File 'solv.gro' does not exist or is not accessible.
+out:      The file could not be opened.
+out:        Reason: No such file or directory
+out:        (call to fopen() returned error code 2)
+out:    In command-line option -p
+out:      File 'topol.top' does not exist or is not accessible.
+out:      The file could not be opened.
+out:        Reason: No such file or directory
+out:        (call to fopen() returned error code 2)
+out:  
+out:  For more information and tips for troubleshooting, please check the GROMACS
+out:  website at http://www.gromacs.org/Documentation/Errors
+out:  -------------------------------------------------------
+ *****************************************************
+ *****************************************************
+#  Neutralize the charges
+#  Running bash command:
+bash >>  echo SOL | gmx genion -s ions.tpr -o solv_ions.gro -p topol.top -pname NA -nname CL -neutral
+
+out:                        :-) GROMACS - gmx genion, 2018.4 (-:
+out:  
+out:                              GROMACS is written by:
+out:       Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+out:      Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+out:    Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+out:   Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+out:    Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+out:    Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+out:      Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+out:     Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+out:   Christian Wennberg    Maarten Wolf   
+out:                             and the project leaders:
+out:          Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+out:  
+out:  Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+out:  Copyright (c) 2001-2017, The GROMACS development team at
+out:  Uppsala University, Stockholm University and
+out:  the Royal Institute of Technology, Sweden.
+out:  check out http://www.gromacs.org for more information.
+out:  
+out:  GROMACS is free software; you can redistribute it and/or modify it
+out:  under the terms of the GNU Lesser General Public License
+out:  as published by the Free Software Foundation; either version 2.1
+out:  of the License, or (at your option) any later version.
+out:  
+out:  GROMACS:      gmx genion, version 2018.4
+out:  Executable:   /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1/bin/gmx
+out:  Data prefix:  /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1
+out:  Working dir:  /home/nanohub/dillner/PigmentHunter/misc/gmx/ipynb
+out:  Command line:
+out:    gmx genion -s ions.tpr -o solv_ions.gro -p topol.top -pname NA -nname CL -neutral
+out:  
+out:  
+out:  -------------------------------------------------------
+out:  Program:     gmx genion, version 2018.4
+out:  Source file: src/gromacs/commandline/cmdlineparser.cpp (line 276)
+out:  Function:    void gmx::CommandLineParser::parse(int*, char**)
+out:  
+out:  Error in user input:
+out:  Invalid command-line options
+out:    In command-line option -s
+out:      File 'ions.tpr' does not exist or is not accessible.
+out:      The file could not be opened.
+out:        Reason: No such file or directory
+out:        (call to fopen() returned error code 2)
+out:    In command-line option -p
+out:      File 'topol.top' does not exist or is not accessible.
+out:      The file could not be opened.
+out:        Reason: No such file or directory
+out:        (call to fopen() returned error code 2)
+out:  
+out:  For more information and tips for troubleshooting, please check the GROMACS
+out:  website at http://www.gromacs.org/Documentation/Errors
+out:  -------------------------------------------------------
+ *****************************************************
+ *****************************************************
+#  em
+#  Running bash command:
+bash >>  gmx grompp -f em.mdp -c solv_ions.gro -p topol.top -o em.tpr
+
+out:                        :-) GROMACS - gmx grompp, 2018.4 (-:
+out:  
+out:                              GROMACS is written by:
+out:       Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+out:      Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+out:    Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+out:   Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+out:    Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+out:    Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+out:      Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+out:     Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+out:   Christian Wennberg    Maarten Wolf   
+out:                             and the project leaders:
+out:          Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+out:  
+out:  Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+out:  Copyright (c) 2001-2017, The GROMACS development team at
+out:  Uppsala University, Stockholm University and
+out:  the Royal Institute of Technology, Sweden.
+out:  check out http://www.gromacs.org for more information.
+out:  
+out:  GROMACS is free software; you can redistribute it and/or modify it
+out:  under the terms of the GNU Lesser General Public License
+out:  as published by the Free Software Foundation; either version 2.1
+out:  of the License, or (at your option) any later version.
+out:  
+out:  GROMACS:      gmx grompp, version 2018.4
+out:  Executable:   /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1/bin/gmx
+out:  Data prefix:  /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1
+out:  Working dir:  /home/nanohub/dillner/PigmentHunter/misc/gmx/ipynb
+out:  Command line:
+out:    gmx grompp -f em.mdp -c solv_ions.gro -p topol.top -o em.tpr
+out:  
+out:  
+out:  -------------------------------------------------------
+out:  Program:     gmx grompp, version 2018.4
+out:  Source file: src/gromacs/commandline/cmdlineparser.cpp (line 276)
+out:  Function:    void gmx::CommandLineParser::parse(int*, char**)
+out:  
+out:  Error in user input:
+out:  Invalid command-line options
+out:    In command-line option -f
+out:      File 'em.mdp' does not exist or is not accessible.
+out:      The file could not be opened.
+out:        Reason: No such file or directory
+out:        (call to fopen() returned error code 2)
+out:    In command-line option -c
+out:      File 'solv_ions.gro' does not exist or is not accessible.
+out:      The file could not be opened.
+out:        Reason: No such file or directory
+out:        (call to fopen() returned error code 2)
+out:    In command-line option -p
+out:      File 'topol.top' does not exist or is not accessible.
+out:      The file could not be opened.
+out:        Reason: No such file or directory
+out:        (call to fopen() returned error code 2)
+out:  
+out:  For more information and tips for troubleshooting, please check the GROMACS
+out:  website at http://www.gromacs.org/Documentation/Errors
+out:  -------------------------------------------------------
+ *****************************************************
+ *****************************************************
+#  run em
+#  Running bash command:
+bash >>  gmx mdrun -v -deffnm em
+
+out:                        :-) GROMACS - gmx mdrun, 2018.4 (-:
+out:  
+out:                              GROMACS is written by:
+out:       Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+out:      Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+out:    Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+out:   Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+out:    Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+out:    Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+out:      Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+out:     Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+out:   Christian Wennberg    Maarten Wolf   
+out:                             and the project leaders:
+out:          Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+out:  
+out:  Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+out:  Copyright (c) 2001-2017, The GROMACS development team at
+out:  Uppsala University, Stockholm University and
+out:  the Royal Institute of Technology, Sweden.
+out:  check out http://www.gromacs.org for more information.
+out:  
+out:  GROMACS is free software; you can redistribute it and/or modify it
+out:  under the terms of the GNU Lesser General Public License
+out:  as published by the Free Software Foundation; either version 2.1
+out:  of the License, or (at your option) any later version.
+out:  
+out:  GROMACS:      gmx mdrun, version 2018.4
+out:  Executable:   /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1/bin/gmx
+out:  Data prefix:  /apps/share64/debian10/gromacs/gromacs-2018.4/AVX1
+out:  Working dir:  /home/nanohub/dillner/PigmentHunter/misc/gmx/ipynb
+out:  Command line:
+out:    gmx mdrun -v -deffnm em
+out:  
+out:  
+out:  -------------------------------------------------------
+out:  Program:     gmx mdrun, version 2018.4
+out:  Source file: src/gromacs/options/options.cpp (line 189)
+out:  Function:    void gmx::internal::OptionSectionImpl::finish()
+out:  
+out:  Error in user input:
+out:  Invalid input values
+out:    In option s
+out:      Required option was not provided, and the default file 'topol' does not
+out:      exist or is not accessible.
+out:      The following extensions were tried to complete the file name:
+out:        .tpr
+out:  
+out:  For more information and tips for troubleshooting, please check the GROMACS
+out:  website at http://www.gromacs.org/Documentation/Errors
+out:  -------------------------------------------------------
+ *****************************************************
